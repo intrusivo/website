@@ -10,16 +10,34 @@
 body {
   background-color: var(--dark-clr);
   color: var(--light-clr);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* display: grid;
+  place-content: center; */
+  height: 100dvh;
+
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 /* <weight>: Use a value from 400 to 800 */
 /* <uniquifier>: Use a unique and descriptive class name */
 
 h1 {
-  font-family: "Sen", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 800;
-  font-style: normal;
   color: var(--main-clr);
   font-size: 6rem;
+}
+
+p {
+  opacity: 0.75;
+
+  b {
+    color: var(--main-clr);
+  }
 }
